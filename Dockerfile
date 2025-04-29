@@ -10,7 +10,7 @@ FROM apache/apisix:${APISIX_VERSION}
 
 
 
-ADD https://github.com/corazawaf/coraza-proxy-wasm/releases/download/$VERSION/$CORAZA_FILENAME .
+ADD https://github.com/corazawaf/coraza-proxy-wasm/releases/download/${CORAZA_VERSION}/${CORAZA_FILENAME} .
 
 USER root
 
