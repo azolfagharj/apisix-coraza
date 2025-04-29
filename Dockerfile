@@ -2,11 +2,12 @@
 ## TESTED=true
 # apisix and coraza wasm plugin version
 ARG APISIX_VERSION=3.12.0-debian
+FROM apache/apisix:${APISIX_VERSION}
 ENV CORAZA_VERSION 0.5.0
 # coraza filename
 ENV CORAZA_FILENAME coraza-proxy-wasm-${CORAZA_VERSION}.zip
 
-FROM apache/apisix:${APISIX_VERSION}
+
 
 
 
