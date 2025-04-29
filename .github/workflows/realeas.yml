@@ -31,7 +31,7 @@ jobs:
       - name: Extract coraza version number
         id: extract_coraza_version
         run: |
-          CORAZA_VERSION=$(grep  CORAZA_VERSION Dockerfile | head -n 1 | awk -F '=' '{print $2}')
+          CORAZA_VERSION=$(grep CORAZA_VERSION  Dockerfile | head -n 1 | awk  '{print $3}')
           echo "CORAZA_VERSION=$CORAZA_VERSION" >> $GITHUB_ENV
 
       - name: Extract apisix version number
